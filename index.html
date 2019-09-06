@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.js"></script> -->
+    <!-- <script src="./sketch.js"></script> -->
+  </head>
+  <body>
+    <div
+      id="screen-1"
+      class="canvas-container"
+      style="background-image: url(./assets/screen-1.jpg);"
+    >
+      <div class="overlay">
+        <img
+          src="./assets/main-logo.png"
+          class="opening-logo"
+          alt="DLT Clubs"
+          onclick="start()"
+        />
+        <p>Tap/ Swipe to take the<br />Fitness Test</p>
+      </div>
+      <div class="swap">
+        <img src="./assets/swipe.png" class="swap-icon" alt="" />
+      </div>
+    </div>
+    <div
+      id="screen-2"
+      class="canvas-containers"
+      style="background-image: url(./assets/screen-2.jpg); display: none;"
+    >
+      <div class="elements">
+        <img src="./assets/logo.png" class="head-logo" alt="DLT Clubs" />
+
+        <div class="container">
+          <h2 class="q_heading">
+            Are you jealous of<br />Milind Soman's <span>fitness</span>?
+          </h2>
+
+          <div class="btn-group">
+            <buttton
+              class="btn select"
+              data-target="screen-3"
+              data-curr="screen-2"
+              >Yes</buttton
+            >
+            <buttton
+              class="btn select"
+              data-target="screen-3"
+              data-curr="screen-2"
+              >No</buttton
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="screen-3"
+      class="canvas-containers"
+      style="background-image: url(./assets/screen-3.jpg); display: none;"
+    >
+      <div class="elements">
+        <img src="./assets/logo.png" class="head-logo" alt="DLT Clubs" />
+
+        <div class="container">
+          <h2 class="q_heading">
+            Do you think of getting <span>fit</span>,<br />but dont find the
+            <span>motivation</span> to?
+          </h2>
+
+          <div class="btn-group">
+            <buttton
+              class="btn select"
+              data-target="screen-4"
+              data-curr="screen-3"
+              >Yes</buttton
+            >
+            <buttton
+              class="btn select"
+              data-target="screen-4"
+              data-curr="screen-3"
+              >No</buttton
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="screen-4"
+      class="canvas-containers"
+      style="background-image: url(./assets/screen-4.jpg); display: none;"
+    >
+      <div class="elements">
+        <img src="./assets/logo.png" class="head-logo" alt="DLT Clubs" />
+
+        <div class="container">
+          <h2 class="q_heading">
+            Do you want to join a<br /><span>revolution?</span>
+          </h2>
+          <div class="btn-group">
+            <buttton
+              class="btn select"
+              data-target="screen-5"
+              data-curr="screen-4"
+              >Yes</buttton
+            >
+            <buttton
+              class="btn select"
+              data-target="screen-5"
+              data-curr="screen-4"
+              >No</buttton
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="screen-5"
+      class="canvas-containers"
+      style="background-image: url(./assets/screen-5.jpg); display: none;"
+    >
+      <div class="elements">
+        <img src="./assets/logo.png" class="head-logo" alt="DLT Clubs" />
+
+        <div class="container">
+          <h1 class="final_heading">
+            Introducing
+          </h1>
+          <h4 class="final_title">
+            memberships starting from<br /><span>7999</span> per month.
+          </h4>
+          <p class="final_text">
+            Get access to amenities like Zumba, Cycling, Tennis, Swimming,
+            Squash, and many more at DLT Clubs!
+          </p>
+          <div class="btn-group">
+            <buttton class="btn btn-join">JOIN</buttton>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
